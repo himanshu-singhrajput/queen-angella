@@ -18,7 +18,7 @@ Asena.addCommand({pattern: 'info', fromMe: false, desc: 'Shows bot information a
     
     var i = Math.floor(1*Math.random())
 
-    var respoimage = await axios.get("https://i.imgur.com/EyKEtLQ.jpeg", { responseType: 'arraybuffer' })
+    var respoimage = await axios.get("https://i.imgur.com/wvTMw09.jpg", { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `` + Config.BOTSK + ` *BOT CREATED BY* DRIPS-MEMES
     
