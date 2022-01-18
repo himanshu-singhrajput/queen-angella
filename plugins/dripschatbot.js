@@ -243,7 +243,7 @@ New.addCommand({ pattern: 'dripsmemes ?(.*)', desc: _dsc, fromMe: true,dontAddCo
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['CHAT_BOT']: 'true'
+                    ['FULL_EVA']: 'true'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
@@ -256,7 +256,7 @@ New.addCommand({ pattern: 'dripsmemes ?(.*)', desc: _dsc, fromMe: true,dontAddCo
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['CHAT_BOT']: 'false'
+                    ['FULL_EVA']: 'false'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
